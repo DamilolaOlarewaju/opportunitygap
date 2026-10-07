@@ -67,7 +67,7 @@ test("AI failure preserves input and never shows demo results", async ({
 }) => {
   await page.goto("/");
   await page.getByRole("button", { name: "Load sample inputs" }).click();
-  await page.getByLabel("AI · your supplied text").check();
+  await page.getByLabel("Live AI Analysis").check();
   await page.getByRole("button", { name: "Analyse supplied text" }).click();
   await expect(
     page.getByRole("alert", { name: "Analysis error" }),
@@ -90,7 +90,7 @@ test("AI response contract errors retain edited input; valid evidence renders in
 }) => {
   await page.goto("/");
   await page.getByRole("button", { name: "Load sample inputs" }).click();
-  await page.getByLabel("AI · your supplied text").check();
+  await page.getByLabel("Live AI Analysis").check();
   await page.getByRole("checkbox").check();
   await page.route("**/api/analyse", (route) =>
     route.fulfill({
@@ -123,7 +123,7 @@ test("AI response contract errors retain edited input; valid evidence renders in
     page.getByRole("heading", { name: "Your evidence & action plan" }),
   ).toBeVisible();
   await expect(page.getByText(/AI RESULTS/)).toBeVisible();
-  await expect(page.getByText(/DEMO RESULTS/)).toHaveCount(0);
+  await expect(page.getByText(/GUIDED DEMO · Synthetic example/)).toHaveCount(0);
   await page.reload();
   await expect(page.getByLabel("CV text", { exact: true })).toHaveValue("");
 });

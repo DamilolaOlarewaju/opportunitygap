@@ -35,7 +35,7 @@ export function AnalysisResults({
       </div>
       <p className="notice">
         {mode === "demo"
-          ? "DEMO RESULTS · Synthetic example only."
+          ? "GUIDED DEMO · Synthetic example"
           : "AI RESULTS · Check this interpretation against your own evidence."}{" "}
         Support is self-reported, not verified proficiency. No hiring score or
         GitHub inspection is provided.

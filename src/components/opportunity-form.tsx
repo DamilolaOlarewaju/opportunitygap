@@ -114,7 +114,7 @@ export function OpportunityForm() {
                     resetResult();
                   }}
                 />{" "}
-                Demo · no API key
+                Guided Demo
               </label>
               <label>
                 <input
@@ -126,12 +126,12 @@ export function OpportunityForm() {
                     resetResult();
                   }}
                 />{" "}
-                AI · your supplied text
+                Live AI Analysis
               </label>
             </div>
             <p className="notice">
               {mode === "demo"
-                ? "Demo mode uses only the labelled synthetic sample. Load sample inputs to explore the full flow. Changes to the sample require AI mode."
+                ? "Guided Demo uses a synthetic student profile to demonstrate OpportunityGap’s full evidence-to-action workflow. Live AI analysis requires a configured API provider."
                 : "AI mode sends your CV, role and optional project text to OpenAI through our server. Availability depends on server configuration. AI interpretations can be mistaken. Provider retention may apply; see the privacy note below."}
             </p>
             <p className="muted">
