@@ -20,7 +20,7 @@ Prepared for the owner's stated deadline, 12 October 2026. The older planning sp
 
 **Application branch:** https://github.com/DamilolaOlarewaju/opportunitygap/tree/feature/opportunitygap-poc
 
-Use the application branch for review: the original main checkout contained only planning files. Publication of the final polish and materials is being completed with the project owner’s authorization.
+Use the application branch for review: the original main checkout contained only planning files. The final polish and materials were pushed with the project owner’s authorization on 12 October 2026. The application-and-materials commit is [9692e0b](https://github.com/DamilolaOlarewaju/opportunitygap/commit/9692e0b). The MP4 and synthetic downloaded plan are published under `capstone/`.
 
 ## Prepared artifacts
 
