@@ -1,0 +1,111 @@
+OpportunityGap action plan
+
+DEMO — synthetic example, not an assessment of your CV.
+
+Self-reported evidence is not independently verified. No hiring score or GitHub inspection is provided.
+
+
+REQUIREMENT COMPARISON
+
+R1 · skill · required
+Role: Build responsive interfaces with HTML, CSS and JavaScript.
+Supported · self-reported
+cv: Built a responsive study planner using HTML, CSS and JavaScript.
+The CV describes relevant interface work. This is self-reported, not verified proficiency.
+
+
+R2 · skill · required
+Role: Use Git for version control.
+Supported · self-reported
+cv: Used Git to track changes and collaborated with two classmates on the study planner.
+The supplied CV explicitly describes using Git.
+
+
+R3 · skill · required
+Role: Write automated tests.
+Explicit gap
+cv: I have not written automated tests yet.
+The student explicitly states a testing limitation. This is a learning gap.
+
+
+R4 · skill · required
+Role: Communicate and collaborate with a team.
+Supported · self-reported
+cv: Used Git to track changes and collaborated with two classmates on the study planner.
+Classmate collaboration provides self-reported teamwork evidence; professional teamwork is not claimed.
+
+
+R5 · credential · required
+Role: A completed bachelor's degree is required.
+Needs clarification
+No supporting evidence supplied.
+Currently studying does not establish a completed degree. Clarify eligibility with the employer; a project cannot replace this credential.
+
+
+R6 · experience · preferred
+Role: Previous professional development experience is preferred.
+Needs clarification
+No supporting evidence supplied.
+No professional experience is supplied. Absence of evidence does not prove lack of experience.
+
+
+R7 · eligibility · required
+Role: Availability to work 20 hours per week is required.
+Needs clarification
+No supporting evidence supplied.
+Availability is not stated and needs clarification.
+
+
+NEXT ACTION
+
+Build a tested task planner
+
+Addresses: R3, R1, R2
+
+Practise automated testing (R3) in a small project connected to your existing interface and Git experience (R1, R2). This does not satisfy the degree or professional experience requirements.
+
+A GitHub repository with a small task planner and automated tests for adding, filtering and completing tasks.
+
+[ ] Build a small task form, subject filter and completion control.
+
+[ ] Write automated tests for the three main behaviours and an empty task error.
+
+[ ] Run the tests and record the actual result in the README.
+
+[ ] Commit the implementation and tests to GitHub with a README describing your contribution.
+
+
+GITHUB EVIDENCE TO CAPTURE
+
+Problem: what the task planner helps students do.
+
+Approach: tools and design choices you actually used.
+
+Evidence: screenshots, test commands and actual test results.
+
+Personal contribution: what you built yourself and any help received.
+
+
+USE ONLY AFTER COMPLETION
+Use only after completion: Built a task planner using [tools actually used] and wrote automated tests covering [behaviours actually tested].
+
+
+TRUTHFUL CV WORDING
+
+Source (cv): Built a responsive study planner using HTML, CSS and JavaScript.
+Suggested wording: Built a responsive study planner with HTML, CSS and JavaScript.
+
+Source (projects): I built the task form and responsive layout.
+Suggested wording: Built the task form and responsive layout.
+
+
+CLARIFICATIONS
+
+Does the employer accept students working toward the required degree?
+
+Do you have professional development experience to document?
+
+Can you commit to 20 hours per week?
+
+
+This downloaded file may contain personal evidence. Keep it somewhere private.

@@ -103,30 +103,52 @@ export function OpportunityForm() {
         <form ref={form} onSubmit={submit} noValidate>
           <fieldset disabled={busy}>
             <legend>Analysis mode</legend>
+            <p className="mode-intro">
+              Start with Guided Demo to explore the workflow, then use your own
+              evidence when a live provider is configured.
+            </p>
             <div className="mode-options">
               <label>
                 <input
                   type="radio"
                   name="mode"
+                  aria-labelledby="demo-mode-label"
+                  aria-describedby="demo-mode-hint"
                   checked={mode === "demo"}
                   onChange={() => {
                     setMode("demo");
                     resetResult();
                   }}
                 />{" "}
-                Guided Demo
+                <span>
+                  <span className="mode-title" id="demo-mode-label">
+                    Guided Demo
+                  </span>
+                  <span className="mode-hint" id="demo-mode-hint">
+                    Recommended start · Synthetic profile
+                  </span>
+                </span>
               </label>
               <label>
                 <input
                   type="radio"
                   name="mode"
+                  aria-labelledby="ai-mode-label"
+                  aria-describedby="ai-mode-hint"
                   checked={mode === "ai"}
                   onChange={() => {
                     setMode("ai");
                     resetResult();
                   }}
                 />{" "}
-                Live AI Analysis
+                <span>
+                  <span className="mode-title" id="ai-mode-label">
+                    Live AI Analysis
+                  </span>
+                  <span className="mode-hint" id="ai-mode-hint">
+                    Your own text · Requires a configured provider
+                  </span>
+                </span>
               </label>
             </div>
             <p className="notice">

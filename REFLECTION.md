@@ -1,55 +1,25 @@
-# First proof of concept reflection
+# OpportunityGap capstone reflection
 
 ## Decisions
 
-The reviewed setup was committed separately before product work. The Next.js App
-Router, strict TypeScript, plain CSS, system fonts and existing configuration were
-preserved. New features are separated into input UI, results UI, contract validation,
-synthetic data, download formatting and a server-only provider adapter.
+The proof of concept keeps a text-first Next.js App Router interface, strict TypeScript, plain CSS and system fonts. A deterministic, synthetic Guided Demo demonstrates the full workflow without provider credits. It is the intended capstone experience, with live analysis separately labelled and never presented as verified working access.
 
-The complete deterministic demo was built and tested before integrating AI. Demo
-outputs are valid only for the labelled sample; editing it cannot silently produce
-an unrelated assessment. Unknown evidence and explicit gaps are separate. Projects
-must address skill requirements and cannot replace credentials or eligibility.
+The evidence contract comes before model output: requirements cite exact role excerpts, supported assessments cite student excerpts, and unknowns remain distinct from explicit limitations. Project actions address skills rather than credentials. CV rewrites are conservatively grounded in supplied text; proposed projects appear only in a conditional future template.
 
-The action plan is a plain UTF-8 text download, avoiding an extra document-generation
-service. It contains evidence, clarifications, project completion steps and clearly
-conditional future wording. There is no website offline-loading claim.
+The portable plan is UTF-8 text, avoiding a document-generation dependency. Visual polish strengthens hierarchy, mode selection, field alignment, result badges and checklists while preserving handlers, contracts and analysis logic.
 
-## Checks and repairs
+## What the deadline review found
 
-Final validation on 7 October 2026: 13 product/adapter/route tests and four production
-browser tests passed; lint, production build, standalone typecheck and diff whitespace
-checks passed. Browser tests used system Chromium at desktop and 390px width. They
-verified the full flow, keyboard submission/focus, download contents, no horizontal
-overflow, absence of browser storage and AI failure/response handling. Axe found zero
-violations on the demo result screens. Visual inspection used desktop/mobile captures.
+The guided application was already complete. The README was a placeholder, the demonstration script used older Demo wording, and validation notes needed to reflect the current branch. The completion pass preserved the app and focused on startup instructions, accurate capability boundaries, a timed script, a captioned screen-capture video, submission text and fresh checks.
 
-Initial checks found a Next.js internal-link lint error and a browser-test selector
-that also matched Next.js's route announcer. Both were repaired. Tightening rewrite grounding also rejected a sample rewrite
-whose context was absent from its cited excerpt; the rewrite was narrowed to the
-supplied wording. Sandboxed process
-permissions initially prevented test/build subprocesses; supported execution
-permissions resolved that. Playwright's download host was blocked, so the already
-installed system Chromium was used without changing network policy or TLS settings.
+See [VALIDATION.md](VALIDATION.md) for the 12 October 2026 results. Product/provider tests, lint, typecheck, production build and four production browser checks passed. Browser checks cover desktop/mobile flow, keyboard focus, downloads, storage, accessibility and unavailable/invalid AI responses. Mock responses do not establish live AI quality. Screenshots and the walkthrough use synthetic data.
 
-## Limits and lessons
+## Codex's contribution
 
-Live OpenAI analysis is unverified: no configured key/model and the environment's
-network allowlist excludes the API host. Mocked tests verify transport, validation,
-storage flag, refusals, errors, size bounds and timeouts; they do not measure model
-quality. Provider retention is not independently verified. No secret was provisioned
-or exposed, and no network policy was changed.
+Codex implemented and reviewed the workflow and provider adapter, updated Guided Demo presentation, polished the interface, executed checks and prepared documentation and capture artifacts. The owner supplied the problem, research and constraints and reviewed changes. No measured time savings, student benefits or hiring outcomes are asserted.
 
-Exact excerpts and conservative rewrite checks catch unsupported evidence and new
-words/metrics but cannot establish semantic truth or exhaustive requirement extraction.
-AI results still require review. The explicit-gap validator favours English limitation
-wording; multilingual support is not implemented. The UI has not been tested with
-screen readers, Safari/Firefox or real students. No measured hiring outcomes, user
-benefits, time savings or representative research claims are made.
+## Limits and next steps
 
-The main lesson is to establish an inspectable evidence contract and complete sample
-flow before relying on a model. The clear separation lets students try the prototype
-while service access remains unavailable. Next evaluation should test whether students
-understand unknowns and can use the recommended checklist, then verify live analysis
-with synthetic examples after authorized provider configuration.
+Live OpenAI access and provider retention remain unverified. There are no accounts, PDF uploads, automatic GitHub inspection, multilingual support or hiring predictions. Exact excerpts and lexical checks cannot establish semantic truth or exhaustive extraction. Automated Chromium and axe checks do not prove full accessibility; screen-reader, other-browser and real-student testing remain future work.
+
+The main lesson is to make evidence and uncertainty inspectable before relying on a model. Next evaluation should ask students to explain the three assessment states and use the action checklist. Live AI should then be evaluated on synthetic cases after provider configuration and credits are available. The four-response survey remains preliminary research, not proof of demand.

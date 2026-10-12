@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-12",
+  "scenes": [
+    {
+      "name": "scene-01.png",
+      "title": "From learning to opportunity",
+      "caption": "OpportunityGap helps students connect internship requirements to evidence from their CV and projects, then choose a practical next step. No hiring score is provided.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-02.png",
+      "title": "Guided Demo is the recommended start",
+      "caption": "This workflow uses a synthetic student profile and deterministic results. Our four-response survey is preliminary evidence, not representative research or proof of demand.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-03.png",
+      "title": "Inspect the synthetic CV and role",
+      "caption": "Alex describes HTML, CSS, JavaScript, Git and collaboration, but explicitly says they have not written automated tests. The role also includes degree and experience requirements.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-04.png",
+      "title": "Keep personal contribution visible",
+      "caption": "Optional evidence describes what the student actually built. Inputs are not automatically saved. Guided Demo accepts this sample only; edited text cannot silently receive a sample assessment.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-05.png",
+      "title": "Evidence you can inspect",
+      "caption": "Every requirement has an exact role excerpt. Supported assessments cite the student's supplied evidence. Support is self-reported, not independently verified proficiency.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-06.png",
+      "title": "Explicit gaps need explicit evidence",
+      "caption": "Testing is an explicit gap because the CV says: I have not written automated tests yet. Missing information alone would be classified as needing clarification.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-07.png",
+      "title": "Eligibility stays separate from skills",
+      "caption": "A degree in progress is not a completed degree. Professional experience and twenty-hour availability are unstated. A practice project cannot replace these requirements.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-08.png",
+      "title": "One practical next action",
+      "caption": "Build a tested task planner: practise testing, R3, using existing interface and Git experience, R1 and R2. The deliverable is a small repository with tests for real task behaviours.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-09.png",
+      "title": "A concrete definition of completion",
+      "caption": "Build the task form, subject filter and completion control. Test the three behaviours and an empty task error. Run the tests and record actual results in the README.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-10.png",
+      "title": "Turn learning into portfolio evidence",
+      "caption": "Capture the problem, approach, screenshots or test results, and your personal contribution. OpportunityGap provides a checklist; it has not fetched or inspected a GitHub repository.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-11.png",
+      "title": "Truthful CV wording",
+      "caption": "Current rewrites cite existing experience. Proposed project wording is separate and marked use only after completion. Do not invent achievements, tools, credentials or metrics.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-12.png",
+      "title": "A plan you can keep",
+      "caption": "The real downloaded text file includes comparisons, evidence, checklists, CV wording and clarifications. It can be read offline once saved; the website is not an offline app.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-13.png",
+      "title": "Desktop and mobile",
+      "caption": "The production browser checks pass at 1280px and 390px. The mobile view shown here is captured from the working app. Accessibility and student usability evaluation remain ongoing work.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-14.png",
+      "title": "Live AI is implemented, not verified working access",
+      "caption": "Live analysis requires provider configuration, credits and explicit consent. Model quality and retention are unverified. The capstone uses Guided Demo; failed AI never becomes a synthetic result silently.",
+      "durationSeconds": 20
+    },
+    {
+      "name": "scene-15.png",
+      "title": "A reviewable capstone",
+      "caption": "The owner supplied the learner problem, research and constraints; Codex helped implement and validate the app. No hiring outcomes or time savings are claimed. Review the final branch and video before submission.",
+      "durationSeconds": 20
+    }
+  ],
+  "accessibility": {
+    "desktopLanding": [],
+    "desktopResults": [],
+    "mobileLanding": [],
+    "mobileResults": []
+  },
+  "demoExternalRequests": [],
+  "httpStatus": 200,
+  "mobileNoOverflow": true,
+  "storage": {
+    "localStorage": 0,
+    "sessionStorage": 0
+  }
+}

@@ -29,7 +29,7 @@ export function AnalysisResults({
             Your evidence & action plan
           </h2>
         </div>
-        <button type="button" onClick={download}>
+        <button className="download-action" type="button" onClick={download}>
           Download action plan (.txt)
         </button>
       </div>
@@ -76,25 +76,29 @@ export function AnalysisResults({
         </p>
         <h3>{result.action.title}</h3>
         <p>{result.action.rationale}</p>
-        <p>
+        <p className="deliverable">
           <strong>Deliverable:</strong> {result.action.deliverable}
         </p>
-        <h4>Completion checklist</h4>
-        <ul>
-          {result.action.checklist.map((s) => (
-            <li key={s}>{s}</li>
-          ))}
-        </ul>
-        {result.action.githubEvidence.length > 0 && (
-          <>
-            <h4>Evidence to capture in your GitHub README</h4>
+        <div className="action-checklists">
+          <div>
+            <h4>Completion checklist</h4>
             <ul>
-              {result.action.githubEvidence.map((s) => (
+              {result.action.checklist.map((s) => (
                 <li key={s}>{s}</li>
               ))}
             </ul>
-          </>
-        )}
+          </div>
+          {result.action.githubEvidence.length > 0 && (
+            <div>
+              <h4>Evidence to capture in your GitHub README</h4>
+              <ul>
+                {result.action.githubEvidence.map((s) => (
+                  <li key={s}>{s}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
         {result.action.futureCvTemplate && (
           <div className="future">
             <strong>Future CV template — use only after completion</strong>
@@ -114,7 +118,7 @@ export function AnalysisResults({
         </p>
       )}
       {result.cvSuggestions.map((s, i) => (
-        <article className="requirement" key={i}>
+        <article className="requirement cv-suggestion" key={i}>
           <blockquote>
             <span>Supplied {s.evidence.source} evidence</span>
             <p>{s.evidence.excerpt}</p>
