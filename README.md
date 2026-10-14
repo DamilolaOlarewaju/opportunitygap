@@ -8,10 +8,10 @@ Turn role requirements into an evidence-linked next step. OpportunityGap is a st
 
 Use Node.js 24 (tested with 24.19.0) and npm (tested with 11.9.0). Next.js requires Node >=20.9.0. The app uses Next.js 16.4.0, React 19.3.0, TypeScript, plain CSS and system fonts. No database or account setup is needed.
 
-The app lives on [feature/opportunitygap-poc](https://github.com/DamilolaOlarewaju/opportunitygap/tree/feature/opportunitygap-poc).
+The complete app and capstone materials are on [main](https://github.com/DamilolaOlarewaju/opportunitygap).
 
 ```sh
-git clone --branch feature/opportunitygap-poc https://github.com/DamilolaOlarewaju/opportunitygap.git
+git clone --branch main https://github.com/DamilolaOlarewaju/opportunitygap.git
 cd opportunitygap
 npm ci --no-fund --no-audit
 npm run build

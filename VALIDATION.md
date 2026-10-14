@@ -78,3 +78,15 @@ before uploading; use DEMO_SCRIPT.md if adding personal narration.
 - Validation and preparation did not submit the capstone form. The reviewed video
   and synthetic plan are included under `capstone/`; final GitHub publication status
   is recorded in SUBMISSION.md. Uploading to the programme portal remains separate.
+
+## Main-branch finalization — 14 October 2026
+
+The completed capstone branch was merged into `main` without conflicts. README
+startup instructions and submission links now point to the default branch.
+Analysis logic, API behaviour, data contracts and result generation are unchanged.
+
+Fresh checks on the merged application passed: `npm test`, `npm run lint`,
+`npm run typecheck`, `npm run build`, and
+`CI=1 PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:browser`.
+All four production browser checks passed in 6.0 seconds. `git diff --check`
+also passed. The existing media and its 12 October measurements are unchanged.
